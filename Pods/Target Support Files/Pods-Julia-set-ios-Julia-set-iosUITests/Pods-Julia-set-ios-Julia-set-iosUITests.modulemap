@@ -1,0 +1,6 @@
+framework module Pods_Julia_set_ios_Julia_set_iosUITests {
+  umbrella header "Pods-Julia-set-ios-Julia-set-iosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
