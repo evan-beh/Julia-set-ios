@@ -14,7 +14,6 @@ struct Uniforms {
     float cx, cy, scale, loop, a_r, a_i;
 };
 
-#define LINEAR(x, s, e) ((s) + ((e) - (s)) * (x))
 
 kernel void kernel_func(texture2d<float, access::write> outTexture [[texture(0)]],
                         constant Uniforms &uniforms [[buffer(0)]],

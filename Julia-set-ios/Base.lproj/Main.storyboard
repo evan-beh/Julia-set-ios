@@ -85,19 +85,23 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF7-7k-zHl">
                                                 <rect key="frame" x="0.0" y="0.0" width="103.5" height="64"/>
-                                                <state key="normal" title="+y"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="+R"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWd-XH-cDg">
                                                 <rect key="frame" x="103.5" y="0.0" width="103.5" height="64"/>
-                                                <state key="normal" title="-y"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="-R"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAl-63-m9i">
                                                 <rect key="frame" x="207" y="0.0" width="103.5" height="64"/>
-                                                <state key="normal" title="+x"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="+I"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFU-gF-2Fn">
                                                 <rect key="frame" x="310.5" y="0.0" width="103.5" height="64"/>
-                                                <state key="normal" title="-x"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="-I"/>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -124,7 +128,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ly3-9O-JM2">
                                                 <rect key="frame" x="0.0" y="0.0" width="182" height="50"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="x-value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XDF-H2-5nP">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="R-value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XDF-H2-5nP">
                                                         <rect key="frame" x="10" y="0.0" width="162" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -141,7 +145,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPp-UQ-GZ7">
                                                 <rect key="frame" x="182" y="0.0" width="182" height="50"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="y-value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5TD-o1-1yV">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="I-value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5TD-o1-1yV">
                                                         <rect key="frame" x="10" y="0.0" width="162" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -216,8 +220,8 @@
                         <outlet property="ibSlider" destination="3yS-IY-Hnp" id="xph-GU-w9G"/>
                         <outlet property="metalView" destination="LUL-jM-nLl" id="kTx-AQ-lPN"/>
                         <outlet property="scrollView" destination="uKB-Ht-p64" id="17J-Yb-l1R"/>
-                        <outlet property="txtFieldX" destination="XDF-H2-5nP" id="NAG-es-36D"/>
-                        <outlet property="txtFieldY" destination="5TD-o1-1yV" id="gwt-eg-v8b"/>
+                        <outlet property="txtFieldI" destination="5TD-o1-1yV" id="gwt-eg-v8b"/>
+                        <outlet property="txtFieldR" destination="XDF-H2-5nP" id="NAG-es-36D"/>
                         <outletCollection property="buttonControls" destination="aF7-7k-zHl" collectionClass="NSMutableArray" id="0rJ-Ae-wif"/>
                         <outletCollection property="buttonControls" destination="YWd-XH-cDg" collectionClass="NSMutableArray" id="UsW-En-358"/>
                         <outletCollection property="buttonControls" destination="GAl-63-m9i" collectionClass="NSMutableArray" id="acA-ph-ljD"/>

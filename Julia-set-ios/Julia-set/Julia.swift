@@ -20,7 +20,7 @@ struct Uniforms : Codable{
 class Julia {
     let threadGroups: MTLSize
     let threadGroupCount: MTLSize
-    let N = 1536
+    let N = 1500
     let device: MTLDevice
     var uniform: Uniforms
     
