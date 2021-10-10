@@ -28,6 +28,7 @@ class MetalView: MTKView {
     func render() {
         commandQueue = device!.makeCommandQueue()!
         compute = Julia(device: device!)
+        compute?.textureSize = self.drawableSize
         
         guard let  library = device!.makeDefaultLibrary() else
         {

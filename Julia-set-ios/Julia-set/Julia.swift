@@ -20,14 +20,14 @@ struct Uniforms : Codable{
 class Julia {
     let threadGroups: MTLSize
     let threadGroupCount: MTLSize
-    let N = 1500
+    var textureSize : CGSize = CGSize(width: 1000,height: 1000)
     let device: MTLDevice
     var uniform: Uniforms
     
     init(device: MTLDevice) {
         self.device = device
         threadGroupCount = MTLSizeMake(8, 8, 1)
-        threadGroups = MTLSizeMake(N / 8, N / 8, 1)
+        threadGroups = MTLSizeMake(Int(textureSize.width) / threadGroupCount.width, Int(textureSize.height) / threadGroupCount.height, 1)
         self.uniform = Uniforms(cx: 0, cy: 0, scale: scale, loop: loop, a_r:0 , a_i: 0)
     }
     
