@@ -35,9 +35,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
          scrollView.delegate = self
         
-//        self.scrollView.minimumZoomScale=1;
+        self.scrollView.minimumZoomScale=1;
 //
-//        self.scrollView.maximumZoomScale=6.0;
+        self.scrollView.maximumZoomScale=10.0;
 
         self.scrollView.contentSize = self.metalView.frame.size;
          

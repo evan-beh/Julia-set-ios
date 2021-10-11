@@ -38,32 +38,17 @@
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="uKB-Ht-p64">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="624"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUN-EO-PPF">
+                                            <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="yc6-V7-mSc" customClass="MetalView" customModule="Julia_set_ios" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="624"/>
-                                                <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUL-jM-nLl" customClass="MetalView" customModule="Julia_set_ios" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="624"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    </view>
-                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="x4q-q0-UV8"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="LUL-jM-nLl" secondAttribute="bottom" id="Add-Kz-7hj"/>
-                                                    <constraint firstAttribute="trailing" secondItem="LUL-jM-nLl" secondAttribute="trailing" id="JIR-xx-vtd"/>
-                                                    <constraint firstItem="LUL-jM-nLl" firstAttribute="top" secondItem="sUN-EO-PPF" secondAttribute="top" id="OSo-O6-ILx"/>
-                                                    <constraint firstItem="LUL-jM-nLl" firstAttribute="leading" secondItem="sUN-EO-PPF" secondAttribute="leading" id="Rd6-TP-xb3"/>
-                                                </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="sUN-EO-PPF" firstAttribute="leading" secondItem="uKB-Ht-p64" secondAttribute="leading" id="3jY-ni-iV8"/>
-                                            <constraint firstItem="x6d-NB-c5I" firstAttribute="bottom" secondItem="sUN-EO-PPF" secondAttribute="bottom" id="5Ga-oI-7zE"/>
-                                            <constraint firstItem="sUN-EO-PPF" firstAttribute="top" secondItem="x6d-NB-c5I" secondAttribute="top" id="F6c-C8-bOm"/>
-                                            <constraint firstAttribute="trailing" secondItem="sUN-EO-PPF" secondAttribute="trailing" id="Lq7-8I-PhN"/>
-                                            <constraint firstItem="sUN-EO-PPF" firstAttribute="leading" secondItem="x6d-NB-c5I" secondAttribute="leading" id="NVx-q1-keC"/>
-                                            <constraint firstAttribute="bottom" secondItem="sUN-EO-PPF" secondAttribute="bottom" id="Rpd-3v-fBw"/>
-                                            <constraint firstItem="sUN-EO-PPF" firstAttribute="top" secondItem="uKB-Ht-p64" secondAttribute="top" id="gpD-HY-fLY"/>
-                                            <constraint firstItem="x6d-NB-c5I" firstAttribute="trailing" secondItem="sUN-EO-PPF" secondAttribute="trailing" id="xdB-DS-bkN"/>
+                                            <constraint firstItem="yc6-V7-mSc" firstAttribute="leading" secondItem="uKB-Ht-p64" secondAttribute="leading" id="KkL-tI-uBN"/>
+                                            <constraint firstAttribute="trailing" secondItem="yc6-V7-mSc" secondAttribute="trailing" id="g40-JL-IuM"/>
+                                            <constraint firstAttribute="bottom" secondItem="yc6-V7-mSc" secondAttribute="bottom" id="iha-OS-yQG"/>
+                                            <constraint firstItem="yc6-V7-mSc" firstAttribute="top" secondItem="uKB-Ht-p64" secondAttribute="top" id="qWi-PY-CxH"/>
                                         </constraints>
                                         <viewLayoutGuide key="contentLayoutGuide" id="58W-q7-FUG"/>
                                         <viewLayoutGuide key="frameLayoutGuide" id="x6d-NB-c5I"/>
@@ -72,9 +57,11 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="uKB-Ht-p64" secondAttribute="bottom" id="8uL-2W-aCU"/>
-                                    <constraint firstItem="uKB-Ht-p64" firstAttribute="leading" secondItem="CAY-CC-Mac" secondAttribute="leading" id="k4T-iG-VEK"/>
+                                    <constraint firstItem="yc6-V7-mSc" firstAttribute="height" secondItem="CAY-CC-Mac" secondAttribute="height" id="H9i-yh-e0O"/>
+                                    <constraint firstItem="uKB-Ht-p64" firstAttribute="leading" secondItem="CAY-CC-Mac" secondAttribute="leading" id="M8J-YT-6nR"/>
                                     <constraint firstItem="uKB-Ht-p64" firstAttribute="top" secondItem="CAY-CC-Mac" secondAttribute="top" id="keA-f1-FLi"/>
                                     <constraint firstAttribute="trailing" secondItem="uKB-Ht-p64" secondAttribute="trailing" id="w8R-aL-9nR"/>
+                                    <constraint firstItem="yc6-V7-mSc" firstAttribute="width" secondItem="CAY-CC-Mac" secondAttribute="width" id="wJK-aD-3og"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1y-ph-lld">
@@ -218,7 +205,7 @@
                     <navigationItem key="navigationItem" id="aXq-Hb-wqs"/>
                     <connections>
                         <outlet property="ibSlider" destination="3yS-IY-Hnp" id="xph-GU-w9G"/>
-                        <outlet property="metalView" destination="LUL-jM-nLl" id="kTx-AQ-lPN"/>
+                        <outlet property="metalView" destination="yc6-V7-mSc" id="8tP-gx-i8y"/>
                         <outlet property="scrollView" destination="uKB-Ht-p64" id="17J-Yb-l1R"/>
                         <outlet property="txtFieldI" destination="5TD-o1-1yV" id="gwt-eg-v8b"/>
                         <outlet property="txtFieldR" destination="XDF-H2-5nP" id="NAG-es-36D"/>
